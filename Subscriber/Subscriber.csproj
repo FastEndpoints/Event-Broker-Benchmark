@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-      <PackageReference Include="FastEndpoints.Messaging.Remote" Version="5.13.0.7-beta" />
+      <PackageReference Include="FastEndpoints.Messaging.Remote" Version="5.14.0.1-beta" />
   </ItemGroup>    
     
   <ItemGroup>

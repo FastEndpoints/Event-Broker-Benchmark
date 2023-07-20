@@ -8,6 +8,9 @@ bld.WebHost.ConfigureKestrel(o => o.ListenLocalhost(6000, o => o.Protocols = Htt
 bld.AddHandlerServer();
 
 var app = bld.Build();
+
+InMemoryEventQueue.MaxLimit = 100000;
+
 app.MapHandlers(h =>
 {
     h.RegisterEventHub<HelloWorldEvent>(HubMode.EventBroker);
